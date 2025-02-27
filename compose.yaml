@@ -1,6 +1,6 @@
 services:
   app:
-    build: .docker
+    build: ./curs1/.docker
     stdin_open: true
     tty: true
     container_name: app.curs1
