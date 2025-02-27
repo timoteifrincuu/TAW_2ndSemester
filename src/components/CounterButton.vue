@@ -5,6 +5,16 @@ const counter = useCounter()
 
 function countUp() {
   counter.count++
+  if (counter.count % 5==0){
+      counter.level++
+  }
+
+  counter.$patch(
+    {
+      count: counter.count++,
+      level: counter.level++
+    }
+  )
 }
 </script>
 
